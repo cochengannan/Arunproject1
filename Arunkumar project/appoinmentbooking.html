@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <h1>
+        Book appointment to consult Doctors
+    </h1>
+    <link rel="website icon" type="png" href="F:\project\Arunkumar project\doctor.png">
+    <title>appointment booking</title>
+    </head>
+     <body>
+<div id="all">
+        <form action="">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="frmn" placeholder="Enter the patientName"><br>
+            <label for="age">Patient Age :</label>
+            <input type="age" id="frmn" placeholder="Enter the Age"><br> 
+            <label for="specialist">Select Specialist:</label>
+            <select>
+                <option value="Select">Select</option>
+                <option value="General">General</option>
+                <option value="Cardio">Cardiologist</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Orthopedic">Orthopedic</option>
+                <option value="ENT">ENT</option>
+            </select><br><br>
+            <button onclick="appointment()" id="book">Book appointment</button><br>
+        </form>
+    </div>
+     </body>
+     <script>
+        function appointment()
+        {
+            let date=prompt("Enter the date for the consultation ");
+            console.log(date);
+            alert("Your appointment scehudeled on"+date);
+        }
+
+     </script>
+     <style>
+        #all
+        {
+            justify-content: center;
+            position: relative;
+            left: 40%;
+            right: 20;
+            top: 30%;
+            bottom: 10%;
+            box-shadow: 0px 4px 3px;
+            width: fit-content;
+            height: 30%;
+        }
+        body
+        {
+            background-image: url("search.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            filter: brightness(1.2);
+          
+            
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        #frmn
+        {
+            padding: 5px;
+            margin: 8px;
+        }
+        #book
+        {
+            font-size:1.5em;
+            top:10px;
+            width: fit-content;
+            height: max-content;
+            border-radius: 10px;
+            background-image: radial-gradient(rgb(236, 19, 153),rgb(101, 23, 247));
+            color:white;
+            margin: 10px;
+        }
+
+     </style>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <h1 id="Heading">Welcome Doctor</h1>
+        <title>New Patient</title>
+        <div id="menu" align="left">
+            <a href="loginpage.html" id="lo">Login</a>
+    </div>
+    </head>
+    <body align="center"> 
+        <div id="new-details" align="center">
+            <fieldset id="bor">
+                <legend>Doctor Details</legend>
+            <label for="patname"> Name:</label>
+            <input type="text" id="pt-details" placeholder="Enter the patient name"><br>
+            <label for="patage"> Age</label>
+            <input type="number" id="pt-details" placeholder="Enter the patient age"><br>
+            <label for="patcont"> Mobile:</label>
+            <input type="phone" id="pt-details" placeholder="Enter the patient mobile no"><br>
+            <label for="specil">Specialization</label>
+            <input type="text" id="pt-deatils" placeholder="Specialization">
+        </fieldset>
+            <fieldset id="bor">
+                <legend>User Details</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="uid" placeholder="Enter the Username"><br>
+            <label for="password">password</label>
+            <input type="password" name="password" id="pasw" placeholder="Enter the Password"><br>
+        </fieldset>
+        </div>
+        <div id="btn">
+            <button id="btn-sub" onclick="newer()">Enroll New Doctor </button>
+        </div>
+        </div>
+    </body>
+    <script>
+        function newer()
+        {
+            alert("Welcome Doctor Registration Successful");
+            alert("You can go back to Login");
+        }
+    </script>
+    <style>
+        #bor
+        {
+            width: fit-content;
+        }
+        #btn-sub
+        {
+            width: fit-content;
+            border: 10px;
+            background-image: linear-gradient(rgb(0, 204, 255),rgb(89, 0, 255));
+            color: white;
+            font-size: 1.5rem;
+        }
+        body
+        {
+         background-image: url("newpat.jpg");
+        }
+        #btn-sub:hover
+        {
+            background-image: linear-gradient(rgb(65, 63, 63),rgba(202, 202, 52, 0.452));
+            transform: scale(1.5);
+        }
+        #Heading
+        {
+            font-family: Helvetica;
+            color: white;
+            font-size: 3rem;
+        }
+        #lo
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+        }
+    </style>
+</html>
